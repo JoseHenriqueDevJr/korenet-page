@@ -183,7 +183,7 @@ export default function App() {
       <section className="border-y border-white/10 py-10">
         <div className="max-w-7xl mx-auto px-6 flex justify-center items-center">
           <a href="https://solarabanhoecuidado.com.br/" target="_blank" rel="noopener noreferrer">
-            <img src="src/assets/solara_white.png" alt="SOLARA BANHO E CUIDADO" className="mx-auto w-40 h-auto object-contain"/>
+            <img src="/solara_white.png" alt="SOLARA BANHO E CUIDADO" className="mx-auto w-40 h-auto object-contain"/>
           </a>
         </div>
       </section>
