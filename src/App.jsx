@@ -37,17 +37,17 @@ export default function App() {
     setCarregando(true)
 
     try {
-      const resposta = await fetch('https://localhost:5096/api/usuarios', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          nome: nome,
-          email: email,
-          senha: senha
-        }),
-      })
+        const resposta = await fetch('http://localhost:5096/api/usuarios', { 
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            nome: nome,   // 2. Mantido tudo em minúsculo igual ao seu banco PostgreSQL
+            email: email,
+            senha: senha
+          }),
+        })
 
       if (resposta.ok) {
         setMensagem('Usuário cadastrado com sucesso!')
