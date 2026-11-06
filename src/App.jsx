@@ -37,7 +37,7 @@ export default function App() {
     setCarregando(true)
 
     try {
-        const resposta = await fetch('http://localhost:5096/api/usuarios', { 
+        const resposta = await fetch('http://localhost:7019/api/usuarios', { 
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ export default function App() {
       if (resposta.ok) {
         setMensagem('Usuário cadastrado com sucesso!')
         setNome('')
-        setEmail('')
+        setEmail('')git
         setSenha('')
         setConfirmarSenha('')
         setTimeout(() => setShowLogin(false), 2000)
